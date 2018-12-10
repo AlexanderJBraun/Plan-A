@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="page-header">User Profile</h2>
+
+    <ul class="list-group">
+      <li class="list-group-item">Username: {{user.username}}</li>
+      <li class="list-group-item">Email: {{user.email}}</li>    
+    </ul>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading"> Customer Tools     </div>
+          <div class="panel-body">
+            <div class="ui-g">
+              <div class="ui-lg-6 ui-md-6 ui-sm-12"><li  [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/order-history']"><button type="button" pButton class="profButton" label="Order History"></button></a></li></div>
+              <div class="ui-lg-6 ui-md-6 ui-sm-12" ngif ><li><button type="button"  pButton class="profButton" (click)="showForum = !showForum" label="{{showForum? 'Hide Change Password':'Change Password'}}"></button></li></div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="showForum">
+        <div class="panel panel-default">
+        <div class="panel-heading"> Change Password</div>
+          <div class="ui-grid-row">
+            <div class="ui-grid-col-2"><label>Current Password: </label></div>
+            <div class="ui-grid-col-4"><input pInputText id="password1" type="password" size="30" [(ngModel)]="currentPass" /></div>
+          </div>
+          <div class="ui-grid-row">
+            <div class="ui-grid-col-2"><label>New Password: </label></div>
+            <div class="ui-grid-col-4"><input pInputText id="password2" type="password" size="30" [(ngModel)]="newPass" /></div>
+          </div>
+          <div class="ui-grid-row">
+            <div class="ui-grid-col-2"><label>Confirm New Password: </label></div>
+            <div class="ui-grid-col-4"><input pInputText id="password3" type="password" size="30" [(ngModel)]="confirmNewPass" /></div>
+          </div>
+          <button type="button" pButton class="profButton" label="Submit" (click)="changePassword(currentPass, newPass, confirmNewPass)"></button>
+          
+      </div>
+      </div>
+    </div>

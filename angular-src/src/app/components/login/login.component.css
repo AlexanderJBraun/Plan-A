@@ -1,0 +1,14 @@
+.form-group{
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.btn-primary{
+    background-color: black;
+}
+.btn-primary:hover{
+    background-color: grey;
+}
+.btn-primary:active{
+    background-color: red;
+}

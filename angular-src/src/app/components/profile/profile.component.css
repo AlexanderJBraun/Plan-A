@@ -1,0 +1,12 @@
+.profButton:focus{
+    background-color: red;
+}
+
+.page-header{
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+.list-group-item{
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 15px;
+}

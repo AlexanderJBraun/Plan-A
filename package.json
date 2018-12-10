@@ -1,0 +1,30 @@
+{
+  "name": "kirkwoodsite",
+  "version": "1.0.0",
+  "description": "Kirkwood holdings Website",
+  "main": "app.js",
+  "dependencies": {
+    "angular-2-local-storage": "^2.0.0",
+    "angular2-flash-messages": "^3.0.1",
+    "angular2-image-upload": "^1.0.0-rc.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.16.1",
+    "cors": "^2.8.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^8.4.0",
+    "mailgun": "^0.5.0",
+    "mongojs": "^2.4.0",
+    "mongoose": "^5.3.15",
+    "nodemailer": "^4.7.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "primeng": "7.0.0",
+    "styliner": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  }
+}
